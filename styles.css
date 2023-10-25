@@ -1,0 +1,124 @@
+html {
+    font-size: 62.5%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #37384e;
+}
+
+.contenedor {
+    position: relative;
+    display: flex;
+    gap: 2rem;
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 2rem;
+}
+.suscribe {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 1rem;
+}
+.titulo {
+    font-size: 3.2rem;
+    font-weight: bold;
+    text-align: center;
+}
+.list {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+.formulario label {
+    font-size: 1.6rem;
+    font-weight: bold;
+}
+.formulario .campo {
+    width: 100%;
+    height: 3rem;
+    border: 1px solid #cdcdcd;
+    margin: 1rem auto;
+    border-radius: .8rem;
+}
+.formulario .campo:hover {
+    cursor: pointer;
+}
+.boton {
+    width: 100%;
+    height: 4rem;
+    border: none;
+    background-color: #222946;
+    color: #FFF;
+    border-radius: .8rem;
+}
+.boton:hover {
+    background-image: linear-gradient( 109.6deg,  rgba(255,87,110,1) 11.2%, rgba(255,100,75,1) 100.2% );
+    cursor: pointer;
+}
+.imagen {
+    width: 100%;
+    height: auto;
+    background-image: url('./assets/images/illustration-sign-up-desktop.svg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+}
+.hidden {
+    display: none;
+    visibility: hidden;
+    opacity: 0;
+}
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+#message {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: #222946;
+}
+@media (max-width: 640px) {
+    .contenedor {
+        height: 100vh;
+        padding: 0;
+        flex-direction: column-reverse;
+    }
+    .imagen {
+        margin: 0;
+        background-image: url(./assets/images/illustration-sign-up-mobile.svg);
+        width: 100%;
+        height: 30rem;
+    }
+}
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    width: 30rem;
+    padding: 2rem;
+}
